@@ -35,7 +35,7 @@ class Proverb
         return $proverbs;
 
     for ($i = 0; $i < $elements; $i++) {
-        if (@!$pieces[$i + 1]) {
+        if ($i == $elements - 1) {
             $proverbs[] = "And all for the want of a {$pieces[0]}.";
             break;
         }
